@@ -36,7 +36,7 @@ export class PipelineCdkStack extends Stack {
     const sourceOutput = new codepipeline.Artifact();
     const unitTestOutput = new codepipeline.Artifact();
 
-    // ソースステージ（GitHub）
+    // ソースステージ
     pipeline.addStage({
       stageName: 'Source',
       actions: [
