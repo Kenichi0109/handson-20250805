@@ -64,7 +64,7 @@ export class PipelineCdkStack extends Stack {
       ],
     });
 
-    // 接続情報出力
+    // 接続情報の出力
     new CfnOutput(this, 'SourceConnectionArn', {
       value: SourceConnection.attrConnectionArn,
     });
